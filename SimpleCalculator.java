@@ -15,16 +15,14 @@ public class SimpleCalculator {
             System.out.print("Please type in the second number: ");
             double secondValue =  Double.parseDouble(r.readLine());
 
-            System.out.println(firstValue);
-            System.out.println(secondValue);
-
             double difference = findDifference(firstValue, secondValue);
             double sum = findSum(firstValue, secondValue);
             double product = findProduct(firstValue, secondValue);
             double quotient = findQuotient(firstValue, secondValue);
 
             //outputs for final result
-            System.out.println( "The Difference is: " + difference + "\n the Sum is: " + sum + "\n the Product is: " + product + "\n the Quotient is: " + quotient);
+            System.out.println("___________________________");
+            System.out.printf("The Difference is: " + difference + "\nThe Sum is: " + sum + "\nThe Product is: " + product + "\nThe Quotient is: %.2f" , quotient);
 
     }
 
