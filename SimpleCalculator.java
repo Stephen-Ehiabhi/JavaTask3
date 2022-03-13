@@ -3,15 +3,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class SimpleCalculator {
+    //declare global variables
     static double diff, sum, prod, quot;
     public static void main(String[] args) throws IOException {
             System.out.println("This is a simple calculator. it can help you find \n a) Sum \n b) Difference \n c) Product \n d) Quotient");
 
             BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 
+            //get first number
             System.out.print("To begin please type in the first number: ");
             double firstValue = Double.parseDouble(r.readLine());
 
+            //get second number
             System.out.print("Please type in the second number: ");
             double secondValue =  Double.parseDouble(r.readLine());
 
