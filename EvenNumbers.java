@@ -1,17 +1,15 @@
-import java.util.Scanner;
-
 public class EvenNumbers {
     public static void main(String[] args) {
-        int number, i;
+        int number = 100, i;
+        int totalEvenNumbers = 0;
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the limit: ");
-        number = sc.nextInt();
-
-        System.out.println("List of even numbers: ");
-        for (i = 2; i <= number; i = i) {
-            System.out.println(i + "");
-            i += 2;
+        System.out.println("This programs calculates even numbers from 1 to 100");
+        //loop that gets all the evn numbers and adds them up;
+        for (i = 2; i <= number; i += 2) {
+            totalEvenNumbers += i;
         }
+
+        //total
+        System.out.println("Total addition of even numbers (1 - 100) is = " + totalEvenNumbers);
     }
 }
